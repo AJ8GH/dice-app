@@ -6,9 +6,10 @@ class Dice
   end
 
   def roll(number = 1)
+    number.times { roll_tracker << rand(1..6) }
+  end
+
+  def roll_tracker
     result = []
-    number.times { result << rand(1..6) }
-    rolls << result
-    result
   end
 end
