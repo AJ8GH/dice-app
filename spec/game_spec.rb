@@ -1,8 +1,10 @@
 require 'game'
 
 describe Game do
-  describe '#score' do
-    it { is_expected.to respond_to :score }
+  describe '#rolls' do
+    it 'shows rolls array' do
+      expect(subject.rolls).to eq []
+    end
   end
 
   describe '#dice' do

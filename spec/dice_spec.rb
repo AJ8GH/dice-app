@@ -41,11 +41,5 @@ describe Dice do
         expect(subject.rolls).to include(roll)
       end
     end
-
-    describe '#rolls' do
-      it 'shows previous rolls' do
-        expect(subject.rolls)
-      end
-    end
   end
 end

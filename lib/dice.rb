@@ -8,7 +8,7 @@ class Dice
   def roll(number = 1)
     result = []
     number.times { result << rand(1..6) }
-    rolls.unshift(result)
+    rolls << result
     result
   end
 end
