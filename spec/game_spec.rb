@@ -13,4 +13,9 @@ describe Game do
       it { is_expected.to be_an_instance_of Dice }
     end
   end
+
+  describe '#player' do
+    subject { described_class.new.player }
+    it { is_expected.to be_an_instance_of Player }
+  end
 end
