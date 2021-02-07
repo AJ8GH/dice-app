@@ -4,7 +4,7 @@ describe Dice do
   describe '#roll' do
     context 'with no arguments' do
       subject { described_class.new.roll.pop }
-      it { is_expected.to be_between 1, 6}
+      it { is_expected.to be_between 1, 6 }
     end
 
     context 'with argument 2' do
